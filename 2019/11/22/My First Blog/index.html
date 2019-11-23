@@ -63,12 +63,15 @@
 		<hgroup>
 		  <h1 class="header-author"><a href="/">James Lau</a></h1>
 		</hgroup>
+		<p class="header-subtitle">Java小白,多多指教</p>
 		
 
 		<nav class="header-menu">
 			<ul>
 			
 				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/photos/">相册</a></li>
 	        
 				<li><a href="/archives/index.html">随笔</a></li>
 	        
@@ -130,6 +133,8 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -147,12 +152,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/archives/index.html">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/photos/">相册</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/archives/index.html">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -179,17 +186,6 @@
     </h1>
   
 
-        <!--显示阅读次数-->
-		
-		  <br/>
-		  <a class="cloud-tie-join-count" href="javascript:void(0);" target="_blank" rel="noopener" style="color:gray;font-size:14px;">
-		  <span class="icon-sort"></span>
-		  <span id="busuanzi_container_page_pv" style="color:#ef7522;font-size:14px;">
-		            阅读数: <span id="busuanzi_value_page_pv"></span>次 &nbsp;&nbsp;
-		  </span>
-		  </a>
-		
-		<!--显示阅读次数完毕-->
         
         <a href="/2019/11/22/My%20First%20Blog/" class="archive-article-date">
   	<time datetime="2019-11-22T12:08:15.924Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-22</time>
@@ -201,7 +197,14 @@
       
         
       
+	      <!-- 增加版权声明 -->
 
+	
+	
+	  <div class="declare" hidden="hidden"></div>
+	
+
+	<!-- 增加版权声明结束 -->
       
         <div class="page-reward">
           <a href="javascript:;" target="_blank" rel="noopener" class="page-reward-btn tooltip-top">
@@ -247,7 +250,7 @@
 <div class="share-btn share-icons tooltip-left">
   <div class="tooltip tooltip-east">
     <span class="tooltip-item">
-      <a href="javascript:;" target="_blank" rel="noopener" class="share-sns share-outer">
+      <a href="#" class="share-sns share-outer">
         <i class="icon icon-share"></i>
       </a>
     </span>
@@ -257,7 +260,7 @@
           <a class="weibo share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="weibo">
             <i class="icon icon-weibo"></i>
           </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" target="_blank" rel="noopener" data-type="weixin">
+          <a class="weixin share-sns wxFab" href="#" data-type="weixin">
             <i class="icon icon-weixin"></i>
           </a>
           <a class="qq share-sns" href="javascript:;" target="_blank" rel="noopener" data-type="qq">
@@ -285,7 +288,7 @@
 </div>
 
 <div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;" target="_blank" rel="noopener"><i class="icon icon-close"></i></a>
+    <a class="close js-modal-close" href="#"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
       <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxylzk61176.github.io/2019/11/22/My%20First%20Blog/" alt="微信分享二维码">
@@ -300,6 +303,20 @@
 </article>
 
   
+<nav id="article-nav">
+  
+    <a href="/2019/11/23/html/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Html
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -425,6 +442,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag color3">JavaWeb</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
