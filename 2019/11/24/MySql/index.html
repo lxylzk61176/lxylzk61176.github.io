@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Html | Lxylzk&#39;s cottage</title>
+  <title>MySql | Lxylzk&#39;s cottage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
   <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
@@ -23,15 +23,15 @@
         border-left-color: #6d6d6d;    /*左边框颜色*/
     }
   </style>
-  <meta name="description" content="HTML快速入门1.Web概述: 软件架构:  B&#x2F;S :  Browser&#x2F;Server 浏览器&#x2F;服务器端 C&#x2F;S :  Client&#x2F;Server 客户端&#x2F;服务器端">
-<meta name="keywords" content="JavaWeb">
+  <meta name="description" content="MySQL基础MySQL是一个关系型数据库管理系统, 由瑞典MySQL AB 公司开发.">
+<meta name="keywords" content="数据库">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Html">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;23&#x2F;html&#x2F;index.html">
+<meta property="og:title" content="MySql">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;11&#x2F;24&#x2F;MySql&#x2F;index.html">
 <meta property="og:site_name" content="Lxylzk&#39;s cottage">
-<meta property="og:description" content="HTML快速入门1.Web概述: 软件架构:  B&#x2F;S :  Browser&#x2F;Server 浏览器&#x2F;服务器端 C&#x2F;S :  Client&#x2F;Server 客户端&#x2F;服务器端">
+<meta property="og:description" content="MySQL基础MySQL是一个关系型数据库管理系统, 由瑞典MySQL AB 公司开发.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-24T10:21:06.785Z">
+<meta property="og:updated_time" content="2019-11-24T13:12:44.435Z">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Lxylzk&#39;s cottage" type="application/atom+xml">
@@ -178,217 +178,355 @@
           </div>
           <div id="js-content" class="content-ll">
             
-<article id="post-html" class="article article-type-post " itemscope itemprop="blogPost">
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
+  
+<article id="post-MySql" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Html
+      MySql
     </h1>
   
 
         
-        <a href="/2019/11/23/html/" class="archive-article-date">
-  	<time datetime="2019-11-23T13:42:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-23</time>
+        <a href="/2019/11/24/MySql/" class="archive-article-date">
+  	<time datetime="2019-11-24T13:11:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-24</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="HTML快速入门"><a href="#HTML快速入门" class="headerlink" title="HTML快速入门"></a><font size='5'>HTML快速入门</font></h2><h5 id="1-Web概述"><a href="#1-Web概述" class="headerlink" title="1.Web概述:"></a>1.Web概述:</h5><ul>
-<li><p>软件架构:</p>
+        <h1 id="MySQL基础"><a href="#MySQL基础" class="headerlink" title="MySQL基础"></a>MySQL基础</h1><p>MySQL是一个关系型数据库管理系统, 由瑞典MySQL AB 公司开发.</p>
+<a id="more"></a>
+
+<h2 id="1-关系型数据库"><a href="#1-关系型数据库" class="headerlink" title="1. 关系型数据库"></a>1. 关系型数据库</h2><p><font color='orange'>关系型数据库又称为关系型数据库管理系统(RDBMS),它是利用数据概念实现对数据处理的算法，达到对数据及其快速的增删改查操作。</font></p>
+<h2 id="2-SQL"><a href="#2-SQL" class="headerlink" title="2.SQL"></a>2.SQL</h2><h3 id="Structured-Query-Language：结构化查询语言"><a href="#Structured-Query-Language：结构化查询语言" class="headerlink" title="Structured Query Language：结构化查询语言"></a><font color='orange'>Structured Query Language：结构化查询语言</font></h3><p> SQL通用语法</p>
+<ul>
+<li><p>SQL 语句可以单行或多行书写，以分号结尾。</p>
+</li>
+<li><p>可使用空格和缩进来增强语句的可读性。</p>
+</li>
+<li><p>MySQL 数据库的 SQL 语句不区分大小写，关键字建议使用大写。</p>
+</li>
+<li><p>注释: 单行注释: – 注释内容 或 # 注释内容(mysql 特有) </p>
+<p>​         多行注释: /* 注释 */</p>
+</li>
+</ul>
+<h3 id="SQL分类"><a href="#SQL分类" class="headerlink" title="SQL分类"></a>SQL分类</h3><ul>
+<li><font color='orange'>DDL(Data Definition Language)数据定义语言<br>用来定义数据库对象：数据库，表，列等。关键字：create, drop,alter 等</font></li>
+<li><font color='black'>DML(Data Manipulation Language)数据操作语言<br>用来对数据库中表的数据进行增删改。关键字：insert, delete, update 等</font></li>
+<li><font color='red'>DQL(Data Query Language)数据查询语言<br>用来查询数据库中表的记录(数据)。关键字：select, where 等</font></li>
+<li>DCL(Data Control Language)数据控制语言(了解)<br>用来定义数据库的访问权限和安全级别，及创建用户。关键字：GRANT， REVOKE 等</li>
+</ul>
+<h1 id="DDL-操作数据库、表-模板化sql"><a href="#DDL-操作数据库、表-模板化sql" class="headerlink" title="DDL:操作数据库、表[^模板化sql]"></a>DDL:操作数据库、表[^模板化sql]</h1><h2 id="操作数据库：CRUD"><a href="#操作数据库：CRUD" class="headerlink" title="操作数据库：CRUD"></a>操作数据库：CRUD</h2><p>1.创建</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">1.创建数据库:</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> db1;</span><br><span class="line">2.创建数据库判断不存在时再创建:</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> db1;</span><br><span class="line">3.创建数据库,并指定字符集:</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> db1 <span class="built_in">character</span> <span class="keyword">set</span> gbk;</span><br><span class="line">4.创建数据库,判断是否存在,并指定字符集:</span><br><span class="line"><span class="keyword">create</span> <span class="keyword">database</span> <span class="keyword">if</span> <span class="keyword">not</span> <span class="keyword">exists</span> db1 <span class="built_in">character</span> <span class="keyword">set</span> gbk;</span><br></pre></td></tr></table></figure>
+
+<p>​    2.查询</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.查询所有数据库名称:</span><br><span class="line">show databases;</span><br><span class="line">2.查询某个数据库的字符集:</span><br><span class="line">show create database db1;</span><br></pre></td></tr></table></figure>
+
+<pre><code>3.修改</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.修改数据库的字符集:</span><br><span class="line">alter database character set utf8;</span><br></pre></td></tr></table></figure>
+
+<p>​    4.删除</p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.刪除数据库:</span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> db1;</span><br><span class="line">2.判断数据库的存在,再删除:</span><br><span class="line"><span class="keyword">drop</span> <span class="keyword">database</span> <span class="keyword">if</span> <span class="keyword">exists</span> db1;</span><br></pre></td></tr></table></figure>
+
+<p>5.使用数据库</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.查询当前正在使用的数据库:</span><br><span class="line">select database ();</span><br><span class="line">2.使用数据库:</span><br><span class="line">use db1;</span><br></pre></td></tr></table></figure>
+
+<h2 id="操作表-CRUD"><a href="#操作表-CRUD" class="headerlink" title="操作表 : CRUD"></a>操作表 : CRUD</h2><ol>
+<li>创建</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1.创建表:</span><br><span class="line">create table if not exists student (</span><br><span class="line">	stu_name varchar(5),</span><br><span class="line">	stu_age int,</span><br><span class="line">	stu_gender varchar(3),</span><br><span class="line">stu_mathscore int,</span><br><span class="line">	stu_englishscore int</span><br><span class="line">);</span><br><span class="line">2.复制表:</span><br><span class="line">create table stu like student;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>查询</li>
+</ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.查询某个数据库中所有的表名称:</span><br><span class="line"><span class="keyword">show</span> <span class="keyword">tables</span>;</span><br><span class="line">2.查询表结构:</span><br><span class="line">desc student;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>修改</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.修改表名:</span><br><span class="line">alter table stu rename to student;</span><br><span class="line">2.修改表的字符集:</span><br><span class="line">alter table stu character set utf8;</span><br><span class="line">3.添加一列:</span><br><span class="line">alter table stu add stu_score int;</span><br><span class="line">4.修改列名称、类型:</span><br><span class="line">alter table stu change stu_gender stu_sex varchar(4);</span><br><span class="line">alter table stu modify stu_gender varchar(1);</span><br><span class="line">5.删除列:</span><br><span class="line">alter table stu drop stu_score;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>删除</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.删除表:</span><br><span class="line">drop table stu;</span><br><span class="line">2.判断存在删除表:</span><br><span class="line">drop table if exists stu;</span><br></pre></td></tr></table></figure>
+
+<h3 id="DML-增删改表中的数据"><a href="#DML-增删改表中的数据" class="headerlink" title="DML 增删改表中的数据"></a>DML 增删改表中的数据</h3><p>1.添加数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">insert into stu(stu_id,stu_address) values (1, &apos;北京&apos;);</span><br><span class="line">注意：</span><br><span class="line">1. 列名和值要一一对应。</span><br><span class="line">2. 如果表名后，不定义列名，则默认给所有列添加值</span><br><span class="line">              		insert into 表名 values(值1,值2,...值n);</span><br><span class="line">3. 除了数字类型，其他类型需要使用引号(单双都可以)引起来</span><br></pre></td></tr></table></figure>
+
+<p>  2.删除数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> 删除一条数据</span><br><span class="line"> delete from stu where stu_id = 1;</span><br><span class="line"> 删除所有数据</span><br><span class="line"> truncate table stu;</span><br><span class="line"> 注意：</span><br><span class="line">1. 如果不加条件，则删除表中所有记录。</span><br><span class="line"> 	2. 如果要删除所有记录</span><br><span class="line">	1. delete from 表名; -- 不推荐使用。有多少条记录就会执行多少次删除操作</span><br><span class="line"> 		2. TRUNCATE TABLE 表名; -- 推荐使用，效率更高 先删除表，然后再创建一张一样的表。</span><br></pre></td></tr></table></figure>
+
+<p> 3.修改数据</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">  update stu set stu_name = &apos;秋山澪&apos;,stu_age = 18,stu_gender = &apos;女&apos; where stu_id = 1;</span><br><span class="line">* 注意：</span><br><span class="line">  	1. 如果不加任何条件，则会将表中所有记录全部修改。</span><br></pre></td></tr></table></figure>
+
+<h1 id="DQL-查询表中的记录"><a href="#DQL-查询表中的记录" class="headerlink" title="DQL:查询表中的记录"></a>DQL:查询表中的记录</h1><ol>
+<li>基础查询</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">1.查询多个字段:</span><br><span class="line">select stu_id,stu_name,stu_age,stu_gender from stu;</span><br><span class="line">2.去重查询:</span><br><span class="line">select distinct stu_address from stu;</span><br><span class="line">3.计算列:</span><br><span class="line">select stu_name,stu_mathscore,stu_englishscore,stu_math + stu_english from stu;</span><br><span class="line">忽略null值计算</span><br><span class="line">select stu_name,stu_mathscore,stu_englishscore,IFNULL(stu_math,0) + IFNULL(stu_english, 0) as 总分 from stu;</span><br><span class="line">4.起别名:</span><br><span class="line">select stu_name,stu_mathscore as &apos;数学成绩&apos;,stu_englishscore as &apos;英语成绩&apos; from stu;</span><br><span class="line">as可以省略</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">2. 条件查询</span><br><span class="line"></span><br><span class="line">  1.where字句后跟条件:</span><br><span class="line">  select stu_name from stu where stu_mathscore &gt; 90;</span><br><span class="line">  select stu_name from stu where stu_englishscore between 95 and 100;</span><br><span class="line">  select stu_name from stu where stu_age &lt;= 18 &amp;&amp; stu_age &gt;= 10;</span><br><span class="line">  select stu_name from stu where stu_age &lt;= 18 and stu_age&gt;= 10;</span><br><span class="line">  select stu_name from stu where stu_age = 18 or stu_age = 21;</span><br><span class="line">  select stu_name from stu where stu_gender != &apos;男&apos;;</span><br><span class="line">  select stu_name from stu where stu_gender &lt;&gt; &apos;男&apos;;</span><br><span class="line">  select stu_name from stu where stu_age in (17,18,19);</span><br><span class="line">  select stu_name from stu where stu_mathscore not null;</span><br><span class="line">  select stu_name from stu where stu_englishscore is not null;</span><br><span class="line">  </span><br><span class="line">  模糊查询:</span><br><span class="line">  %:占位符代表零个或多个. _占位符代表一个</span><br><span class="line">  select stu_name from stu where stu_name like &apos;刘%&apos;; -- 查询姓刘的学生</span><br><span class="line">  select stu_name from stuwhere stu_name like &apos;%德%&apos;; -- 查询姓名中带德字的(常用)</span><br><span class="line">  select stu_name from stu where stu_name like &quot;__德&quot;; -- 查询姓名中第三个字是德的</span><br><span class="line">  select stu_name from stu where stu_name like &quot;___&quot;; -- 查询名字是三个字的学生</span><br></pre></td></tr></table></figure>
+
+<h3 id="DQL排序查询"><a href="#DQL排序查询" class="headerlink" title="DQL排序查询"></a>DQL排序查询</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">语法: order by 排序字段1 排序方式1, 排序字段2 排序方式2;      排序方式: ASC:升序  DESC:降序</span><br><span class="line">select * from stu order by math ASC;</span><br><span class="line">select * from stu order by english DESC;</span><br><span class="line">select * from stu order by math ASC , english DESC;</span><br><span class="line">注意: 如果有多个排序条件,则当前面的条件值一样时,才会判断第二条件.</span><br></pre></td></tr></table></figure>
+
+<h3 id="聚合函数"><a href="#聚合函数" class="headerlink" title="聚合函数"></a>聚合函数</h3><p>将一列数据作为一个整体,进行纵向计算. (<strong><em>与列相关</em>)</strong></p>
 <ol>
-<li>B/S :  Browser/Server 浏览器/服务器端</li>
-<li>C/S :  Client/Server 客户端/服务器端<a id="more"></a></li>
+<li><font color='orange'>count : 计算个数;</font></li>
+<li>max : 计算最大值;</li>
+<li>min : 计算最小值;</li>
+<li>sum : 求和;</li>
+<li>avg : 求平均值;</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select count(主键) from stu;</span><br><span class="line">select max(math) from stu;</span><br><span class="line">select min(english) from stu;</span><br><span class="line">select avg(math) from stu;</span><br><span class="line">select sum(english) from stu;</span><br><span class="line"></span><br><span class="line">注意: 聚合函数的计算排除null值. 可以用IFNULL函数解决;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分组查询"><a href="#分组查询" class="headerlink" title="分组查询"></a>分组查询</h3><ol>
+<li><font color='orange'>语法 group by 分组字段;</font></li>
+<li>注意:<ul>
+<li>分组之后查询的字段: 分组的字段, 聚合函数;</li>
+<li><font color='orange'>where 和 having的区别</font><ol>
+<li>where在分组之前限定,不满足条件则不参与分组.</li>
+<li>having在分组之后进行限定, 不满足条件则不会被查询出来.</li>
+<li>where后不可以跟聚合函数, having后可以跟聚合函数判断.</li>
 </ol>
 </li>
-<li><p>资源分类:</p>
-<ol>
-<li><p>静态资源:  <font size='3' color='red'>使用静态网页技术发布的资源.</font></p>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select sex, sum(math), avg(english),count(sex) from stu where math &gt; 90 &amp;&amp; english &gt; 90 group by sex having count(sex) &gt; 2;</span><br></pre></td></tr></table></figure>
+
+<h3 id="分页查询"><a href="#分页查询" class="headerlink" title="分页查询"></a>分页查询</h3><ol>
+<li>语法: limit 开始的索引,每页查询的条数; <ul>
+<li>公式: <font color='orange'>开始的索引 = (当前的页码 - 1) * 每页显示的条数.</font></li>
+</ul>
+</li>
+<li>limit 是mysql的一个方言.</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">select * from stu limit 0,3;</span><br><span class="line">select * from stu limit 3,3;</span><br><span class="line">select * from stu limit 6,3;</span><br></pre></td></tr></table></figure>
+
+<h1 id="约束"><a href="#约束" class="headerlink" title="约束"></a>约束</h1><ul>
+<li>对表中的数据进行限定,保证数据的正确性、有效性和完整性.</li>
+<li>分类:</li>
+<li><ol>
+<li>主键约束: <strong><font color='orange'>primary key</font></strong></li>
+<li>非空约束: <strong><font color='orange'>not null</font></strong></li>
+<li>唯一约束: <strong><font color='orange'>unique</font></strong></li>
+<li>外键约束: <strong><font color='orange'>foreign key</font></strong> </li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">1.创建表时添加约束:</span><br><span class="line">create table if not exists stu (</span><br><span class="line">	id int primary key,</span><br><span class="line">    name varchar(5) not null,</span><br><span class="line">    age int,</span><br><span class="line">    address varchar(11),</span><br><span class="line">    ID_NUM int unique;</span><br><span class="line">);</span><br><span class="line">2.创建表后添加约束:</span><br><span class="line">alter table stu modify name varchar(20) not null;</span><br><span class="line">alter table stu modify id int not null unique;</span><br><span class="line">alter table stu modify id primary key;</span><br><span class="line">3.创建表后删除约束:</span><br><span class="line">唯一约束的删除: alter table stu drop index id;</span><br><span class="line">主键约束的删除: alter table stu drop primary key;</span><br><span class="line">非空约束的删除: alter table stu modify name varchar(20);</span><br><span class="line"></span><br><span class="line">4.自动增长:</span><br><span class="line">	如果某一列是数值类型的,使用auto_increment可以完成数值的自动增长</span><br><span class="line">添加自动增长:</span><br><span class="line">create table if not exists stu (</span><br><span class="line">	id int primary key auto_increment,</span><br><span class="line">    name varchar(20) not null,</span><br><span class="line">    age int not null,</span><br><span class="line">    phone int unique</span><br><span class="line">);</span><br><span class="line">alter table stu modify id int auto_increment;</span><br><span class="line">删除自动增长:</span><br><span class="line">alter table stu modify id int;</span><br></pre></td></tr></table></figure>
+
 <ul>
-<li><p>特点:</p>
+<li><p><strong><font color='red'>外键约束</font></strong></p>
+<p>foreign key, 让表与表产生关系,从而保证数据的<font color='orange'>正确性.</font></p>
+<p>语法: <font color='orange'>constraint 外键名称 foreign key (外键名称列) reference 主表名称(主表列名称)</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">1.创建表时添加外键约束:</span><br><span class="line">create table if not exists stu (</span><br><span class="line">	id int primary key,</span><br><span class="line">    name varchar(20) not null,</span><br><span class="line">    age int not null,</span><br><span class="line">    class varchar(5),</span><br><span class="line">    constraint 外键名称 foreign key (外键名称列) references 主表名称(主表列名称)</span><br><span class="line">);</span><br><span class="line">2.创建表以后添加外键:</span><br><span class="line">alter table stu add constraint 外键名称 foreign key (外键字段名) references 主表名称(主表列名称)</span><br><span class="line">3.删除外键:</span><br><span class="line">alter table stu drop foreign key 外键名称;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>级联操作</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">级联更新: on update cascade;</span><br><span class="line">级联删除: on delete cascade;</span><br><span class="line">语法:</span><br><span class="line">alter table stu add constraint 外键名称 foreign key(字段名称) references 主表名称(主表列名称)</span><br><span class="line">on update cascade on delete cascade;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="数据库设计"><a href="#数据库设计" class="headerlink" title="数据库设计"></a>数据库设计</h3><ol>
+<li><p><font color='orange'>一对多关系: 在多的一方添加外键指向一的一方的主键.</font></p>
+</li>
+<li><p>多对多关系: <strong><font color='red'>依赖第三张表</font></strong> 第三张表最少有两个字段作为外键,分别指向另外两个表的主键.</p>
+</li>
+<li><p>一对一关系: </p>
+<p>​                    1.不需要拆分,在一张表中设置即可.</p>
+<p>​                    2. 在任意一方设置唯一外键,指向另一方的主键.</p>
+</li>
+</ol>
+<h2 id="多表查询"><a href="#多表查询" class="headerlink" title="*多表查询"></a><font color='red'>*多表查询</font></h2><ul>
+<li><p>多表查询分类:</p>
 <ol>
-<li><p>所有用户访问, 得到的结果一样.</p>
-<p>如: 文本, 图片, 音频, 视频, html, css, JavaScript.</p>
+<li><p>内连接查询:</p>
+<ol>
+<li><p>隐式内连接: 使用where消除无用数据.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from emp, dept where emp.&apos;dept_id&apos; = dept.id;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>显式内连接: 语法 : select 字段 from 表1 [inner] join 表2 on 条件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from emp inner join dept on emp.dept_id = dept.id;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>内连接查询三步骤:</p>
+<ul>
+<li><p>明确从哪些表中查数据.</p>
+</li>
+<li><p>条件是什么</p>
+</li>
+<li><p>查询哪些字段</p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ol>
 </li>
 </ol>
 </li>
 </ul>
-<p>浏览器内置静态资源解析引擎, 用来展示静态资源.</p>
-</li>
-<li><p>动态资源:  <font size='3' color='red'>使用动态网页技术发布的资源.</font></p>
-<ul>
-<li><p>特点:</p>
+<ol start="2">
+<li><p>外连接查询:</p>
 <ol>
-<li><p>用户访问的结果, 可能不一样.</p>
-<p>如: JSP / Servlet / PHP / ASP等</p>
-</li>
-</ol>
-</li>
-</ul>
-<p><font size='3' color='red'>如果用户请求的是动态资源, 那么浏览器会解析动态资源, 转为静态资源,  再发送给浏览器.</font></p>
-</li>
-</ol>
-</li>
-</ul>
-<h5 id="2-HTML概述"><a href="#2-HTML概述" class="headerlink" title="2.HTML概述:"></a>2.HTML概述:</h5><ul>
-<li><p>概念: <font size='3' color='red'>最基础的网页开发语言, 全称<strong>Hyper Text Markup Language(超文本标记语言)</strong></font></p>
+<li><p>左外连接:</p>
 <ul>
-<li>超文本 : 是用超链接的方法,将各种不同空间的文字信息阻止在一起的网状文本.</li>
-<li>标记语言: 由标签构成的语言, 非编程语言. 如 : html , xml</li>
+<li><p>查询左表全部数据和右表的交集部分.</p>
+</li>
+<li><p>语法: select 字段 from 表1 left [outer] join 表2 on 条件;</p>
+</li>
 </ul>
 </li>
-<li><p>基本语法:</p>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select t1.*, t2.&apos;name&apos; from emp t1 left join dept t2 on t1.dept_id = t2.id;</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>右外连接<ul>
+<li>查询右表所有数据和左表的交集部分.</li>
+<li>语法:select 字段 from 表1 right [outer] join 表2 on 条件;</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from dept t2 right join emp t1 on t1.&apos;dept_id&apos; = t2.&apos;id&apos;;</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>子查询<ul>
+<li>查询中嵌套查询</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from emp where emp.salary = (select max(salary) from emp);</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>自关联查询<ul>
+<li>同表中的不同数据相关联,然后查询.</li>
+</ul>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select t1.name, t2.name from emp t1 left join emp t2 on t1.mgr = t2.id;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ol>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><ul>
+<li><p>如果一个包含多个步骤的业务操作, 被事务管理, 那么这些操作要么同时成功, 要么同时失败.</p>
+</li>
+<li><p>操作 :</p>
 <ol>
-<li>html文档后缀名 .html 或 .htm</li>
-<li>标签分为: <font size='3' color='red'>围堵标签(有开始和结束标签) , 自闭和标签(只有开始标签)</font>.</li>
-<li>标签可以嵌套.  例:  <c> <b></b></c></li>
-<li>标签属性在开始标签中定义. 属性由键值对组成. 值要用引号引起来.</li>
-<li>html中不区分大小写, 但还是建议小写.</li>
-<li>注释: <!-- 注释 --></li>
+<li>开启事务: start transaction;</li>
+<li>回滚:        rollback;</li>
+<li>提交:        commit;</li>
+</ol>
+</li>
+<li><p>事务的四大特征: (A C I D) (面试必备)</p>
+<ol>
+<li><strong><font size='3' color='orange'>原子性</font></strong>: 是不可分割的最小操作单位, 要么同时成功,要么同时失败.</li>
+<li><strong><font size='3' color='orange'>持久性</font></strong>: 当事务提交或回滚之后, 对于数据库的改变是永久的.</li>
+<li><strong><font size='3' color='orange'>隔离性</font></strong>: 多个事务之间不互相干扰.</li>
+<li><strong><font size='3' color='orange'>一致性</font></strong>: 事务前后,数据总量不变.</li>
+</ol>
+</li>
+<li><p>事务提交方式:</p>
+<ol>
+<li><p>自动提交:</p>
+<ul>
+<li><p>MySQL默认是自动提交事务.</p>
+</li>
+<li><p>每写一条DML(增删改)语句就会自动提交一次事务.</p>
+</li>
+</ul>
+</li>
+<li><p>手动提交:</p>
+<ul>
+<li><p>Oracle默认是手动提交事务.</p>
+</li>
+<li><p>需要先开启事务, 再提交.</p>
+</li>
+</ul>
+</li>
+<li><p>修改事务的默认提交方式:</p>
+<ul>
+<li><p>查看事务的默认提交方式: <font size='3' color='orange'>select @@autocommit; </font> - - - - 1代表自动提交, 0代表手动提交.</p>
+</li>
+<li><p>修改事务默认的提交方式: <font size='3' color='orange'>set  @@autocommit = 0;</font></p>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><p>事务的隔离级别:</p>
+<ul>
+<li><p>概念：多个事务之间隔离的，相互独立的。但是如果多个事务操作同一批数据，则会引发一些问题，设置不同的隔离级别就可以解决这些问题。</p>
+</li>
+<li><p>存在问题:</p>
+<ol>
+<li>脏读: 一个事务,读取到了另一个事务中没有提交的数据.</li>
+<li>不可重复读(虚读): 在同一个事务中, 两次读取到的数据不一样.</li>
+<li>幻读: 一个事务操作(DML)数据表中所有记录，另一个事务添加了一条数据，则第一个事务查询不到自己的修改。</li>
+</ol>
+</li>
+<li><p>隔离级别:</p>
+<ol>
+<li><p>read uncommited: 读未提交</p>
+<ul>
+<li>产生的问题: 脏读、不可重复读、幻读.</li>
+</ul>
+</li>
+<li><p>read commited: 读已提交 (Oracle默认)</p>
+<ul>
+<li>产生的问题: 不可重复读, 幻读.</li>
+</ul>
+</li>
+<li><p>repeatable read: 可重复读 (MySQL默认)</p>
+<ul>
+<li>产生的问题: 幻读.</li>
+</ul>
+</li>
+<li><p>serializable: 串行化.</p>
+<ul>
+<li>可解决所有问题.</li>
+</ul>
+</li>
+</ol>
+<p><font size='3' color='orange'>注意: 隔离级别从小到大安全性越来越高, 但效率越来越低.</font></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">查询数据库隔离级别:</span><br><span class="line">select @@tx_isolation;</span><br><span class="line"> 数据库设置隔离级别：</span><br><span class="line">set global transaction isolation level  级别字符串;</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h2 id="DCL-数据库控制语言"><a href="#DCL-数据库控制语言" class="headerlink" title="DCL : (数据库控制语言)"></a>DCL : (数据库控制语言)</h2><ol>
+<li><p>管理用户:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">添加用户:</span><br><span class="line">* 语法：CREATE USER &apos;用户名&apos;@&apos;主机名&apos; IDENTIFIED BY &apos;密码&apos;;</span><br><span class="line">删除用户：</span><br><span class="line">* 语法：DROP USER &apos;用户名&apos;@&apos;主机名&apos;;</span><br><span class="line">修改用户密码：</span><br><span class="line">* 语法：1.UPDATE USER SET PASSWORD = PASSWORD(&apos;新密码&apos;) WHERE USER = &apos;用户名&apos;;</span><br><span class="line">	   2.SET PASSWORD FOR &apos;用户名&apos;@&apos;主机名&apos; = PASSWORD(&apos;新密码&apos;);</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>MySQL忘记root密码怎么办?</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"> mysql中忘记了root用户的密码？</span><br><span class="line">1. cmd -- &gt; net stop mysql 停止mysql服务* 需要管理员运行该cmd</span><br><span class="line">2. 使用无验证方式启动mysql服务： mysqld --skip-grant-tables</span><br><span class="line">3. 打开新的cmd窗口,直接输入mysql命令，敲回车。就可以登录成功</span><br><span class="line">4. use mysql;</span><br><span class="line">5. update user set password = password(&apos;你的新密码&apos;) where user = &apos;root&apos;;</span><br><span class="line">6. 关闭两个窗口</span><br><span class="line">7. 打开任务管理器，手动结束mysqld.exe 的进程</span><br><span class="line">8. 启动mysql服务</span><br><span class="line">9. 使用新密码登录。</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>权限管理:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">1. 查询权限：</span><br><span class="line">			-- 查询权限</span><br><span class="line">			SHOW GRANTS FOR &apos;用户名&apos;@&apos;主机名&apos;;</span><br><span class="line">			SHOW GRANTS FOR &apos;lisi&apos;@&apos;%&apos;;</span><br><span class="line"></span><br><span class="line">2. 授予权限：</span><br><span class="line">			-- 授予权限</span><br><span class="line">			grant 权限列表 on 数据库名.表名 to &apos;用户名&apos;@&apos;主机名&apos;;</span><br><span class="line">			-- 给张三用户授予所有权限，在任意数据库任意表上</span><br><span class="line">			</span><br><span class="line">			GRANT ALL ON *.* TO &apos;zhangsan&apos;@&apos;localhost&apos;;</span><br><span class="line">3. 撤销权限：</span><br><span class="line">			-- 撤销权限：</span><br><span class="line">			revoke 权限列表 on 数据库名.表名 from &apos;用户名&apos;@&apos;主机名&apos;;</span><br><span class="line">			REVOKE UPDATE ON db3.`account` FROM &apos;lisi&apos;@&apos;%&apos;;</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+</li>
 </ol>
 </li>
 </ul>
-<h2 id="常用标签"><a href="#常用标签" class="headerlink" title="常用标签"></a>常用标签</h2><h5 id="1-文件标签"><a href="#1-文件标签" class="headerlink" title="1.文件标签:"></a>1.文件标签:</h5><p>html文档的根标签</p>
-<ul>
-<li><p>head：头标签, 用于指定html文档的一些属性, 引入外部的资源</p>
-</li>
-<li><p>title：标题标签</p>
-</li>
-<li><p>body：体标签</p>
-</li>
-<li><!Document html><p> : html5中定义该文档是html文档</p>
-</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE html&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">"en"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>题目<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">	主题内容</span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h5 id="2-文本标签"><a href="#2-文本标签" class="headerlink" title="2.文本标签:"></a>2.文本标签:</h5><ul>
-<li><p>标题标签: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span>标题1<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h2</span>&gt;</span>标题2<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h3</span>&gt;</span>标题3<span class="tag">&lt;/<span class="name">h3</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h4</span>&gt;</span>标题4<span class="tag">&lt;/<span class="name">h4</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h5</span>&gt;</span>标题5<span class="tag">&lt;/<span class="name">h5</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h6</span>&gt;</span>标题6<span class="tag">&lt;/<span class="name">h6</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">h1</span>&gt;</span> ~ <span class="tag">&lt;<span class="name">h6</span>&gt;</span> 从大到小</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>段落标签: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>我是段落标签<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>换行标签: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>水平线标签: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">hr</span>&gt;</span></span><br><span class="line">属性 color : 颜色, width: 宽度, size: 粗细, align: 对齐方式.</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字体加粗: </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">b</span>&gt;</span>我是b标签<span class="tag">&lt;/<span class="name">b</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字体倾斜: <i></p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">i</span>&gt;</span>我是i标签<span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>字体标签: (已过时)</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">"red"</span> <span class="attr">size</span>=<span class="string">"4"</span> <span class="attr">face</span>=<span class="string">"微软雅黑"</span> &gt;</span>我是font标签<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br><span class="line">属性: color : 颜色, size : 大小, face : 字体;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>文本居中: (已过时)</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">center</span>&gt;</span><span class="tag">&lt;<span class="name">font</span>&gt;</span>你好,世界<span class="tag">&lt;/<span class="name">font</span>&gt;</span><span class="tag">&lt;/<span class="name">center</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-</li>
-</ul>
-<h5 id="3-图片标签"><a href="#3-图片标签" class="headerlink" title="3.图片标签:"></a>3.图片标签:</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"../img/三笠.jpg"</span> <span class="attr">alt</span>=<span class="string">"图片加载失败"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li><p>属性: src, width, align</p>
-</li>
-<li><p>src属性: 指图片的路径, 也可以是网址</p>
-</li>
-<li><p>相对路径: 以./开头代表当前目录</p>
-<p>​                 ../代表上级目录</p>
-</li>
-<li><p>alt属性: 值为图片加载失败时显示的内容</p>
-</li>
-</ul>
-<h5 id="4-列表标签"><a href="#4-列表标签" class="headerlink" title="4.列表标签:"></a>4.列表标签:</h5><p>有序列表:  </p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ol</span> <span class="attr">type</span>=<span class="string">"A"</span>&gt;</span> <span class="comment">&lt;!--type表示有序列表计数样式--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>咖啡<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>牛奶<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>茶<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ol</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>无序列表:</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">type</span>=<span class="string">"square"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>可乐<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>雪碧<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">li</span>&gt;</span>果粒橙<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-<h5 id="5-链接标签"><a href="#5-链接标签" class="headerlink" title="5.链接标签:"></a>5.链接标签:</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"https://www.bilibili.com/"</span> <span class="attr">target</span>=<span class="string">"_blank"</span>&gt;</span>我是百度<span class="tag">&lt;/<span class="name">a</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>属性：</p>
-<ul>
-<li>href：指定访问资源的URL(统一资源定位符)<ul>
-<li><font size='3' color='red'><strong>target：指定打开资源的方式</strong></font><ul>
-<li>_self: 默认值，在当前页面打开</li>
-</ul>
-</li>
-<li>_blank: 在空白页面打开</li>
-</ul>
-</li>
-</ul>
-<h5 id="6-块标签"><a href="#6-块标签" class="headerlink" title="6.块标签:"></a>6.块标签:</h5><ul>
-<li><strong>div  :  每一个div占满一整行。块级标签</strong></li>
-<li><strong>span : 文本信息在一行展示，行内标签 内联标签</strong></li>
-</ul>
-<h5 id="7-语义化标签-html5中为了提高程序的可读性，提供了一些标签"><a href="#7-语义化标签-html5中为了提高程序的可读性，提供了一些标签" class="headerlink" title="7.语义化标签:  html5中为了提高程序的可读性，提供了一些标签"></a>7.语义化标签:  html5中为了提高程序的可读性，提供了一些标签</h5><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">header</span>&gt;</span>：页眉</span><br><span class="line"><span class="tag">&lt;<span class="name">footer</span>&gt;</span>：页脚</span><br></pre></td></tr></table></figure>
-
-<h5 id="8-表格标签"><a href="#8-表格标签" class="headerlink" title="8.表格标签:"></a>8.表格标签:</h5><p>table：定义表格</p>
-<ul>
-<li>width：宽度</li>
-<li>border：边框</li>
-<li>cellpadding：定义内容和单元格的距离</li>
-<li>cellspacing：定义单元格之间的距离。如果指定为0，则单元格的线会合为一条、</li>
-<li>bgcolor：背景色</li>
-<li>align：对齐方式</li>
-</ul>
-<p><strong>tr：定义行</strong></p>
-<ul>
-<li>bgcolor：背景色</li>
-<li>align：对齐方式</li>
-</ul>
-<p><strong>td：定义单元格</strong></p>
-<ul>
-<li>colspan：合并列</li>
-<li>rowspan：合并行</li>
-</ul>
-<p><strong>th：定义表头单元格</strong></p>
-<ul>
-<li>caption标签：表格标题</li>
-<li>thead标签：表示表格的头部分</li>
-<li>tbody标签：表示表格的体部分</li>
-<li>tfoot标签：表示表格的脚部分</li>
-</ul>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">"1"</span> <span class="attr">cellspacing</span>=<span class="string">"0"</span> <span class="attr">align</span>=<span class="string">"center"</span> <span class="attr">width</span>=<span class="string">"500"</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>年龄<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">th</span>&gt;</span>性别<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>艾伦<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>15<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>男<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>三笠<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">"2"</span>&gt;</span>15<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>女<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">tr</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span> &gt;</span>阿明<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--            &lt;td rowspan="2"&gt;15&lt;/td&gt;--&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">td</span>&gt;</span>男<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
+<p>[^模板化sql]: 有固定格式, 做好笔记保存, 没必要花时间背会. 用到查笔记即可.</p>
 
       
 	      <!-- 增加版权声明 -->
 
 	
 	
-		<div style="text-align:center;color: #ccc;font-size:22px;">
-               <br>
-               <br>
-               -------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------
-               <br>
-               <br>
-                <br>
-                <br>
-               </div>
-	  <div class="declare">
-	    <strong>本文作者：</strong>
-	    
-	      James Lau
-	    
-	    <br>
-	    <strong>本文链接：</strong>
-	    <a rel="license" href="http://yoursite.com/2019/11/23/html/">http://yoursite.com/2019/11/23/html/</a>
-	    <br>
-	    <strong>版权声明：</strong>
-	    本作品采用
-	    <a rel="license noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>
-	    进行许可。转载请注明出处！
-	    
-	  </div>
+	  <div class="declare" hidden="hidden"></div>
 	
 
 	<!-- 增加版权声明结束 -->
@@ -427,13 +565,18 @@
     </div>
     <div class="article-info article-info-index">
       
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
       
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color3">JavaWeb</a>
+        			<a href="javascript:void(0)" target="_blank" rel="noopener" class="js-tag article-tag-list-link color4">数据库</a>
         		</li>
       		
 		</ul>
@@ -489,7 +632,7 @@
     <a class="close js-modal-close" href="#"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxylzk61176.github.io/2019/11/23/html/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://lxylzk61176.github.io/2019/11/24/MySql/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -503,18 +646,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/11/24/JDBC/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          JDBC
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/11/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">My First Blog</div>
+    <a href="/2019/11/24/JDBC/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">JDBC</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -541,7 +675,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTML快速入门"><span class="toc-number">1.</span> <span class="toc-text">HTML快速入门</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-Web概述"><span class="toc-number">1.0.0.1.</span> <span class="toc-text">1.Web概述:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-HTML概述"><span class="toc-number">1.0.0.2.</span> <span class="toc-text">2.HTML概述:</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#常用标签"><span class="toc-number">2.</span> <span class="toc-text">常用标签</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1-文件标签"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">1.文件标签:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-文本标签"><span class="toc-number">2.0.0.2.</span> <span class="toc-text">2.文本标签:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#3-图片标签"><span class="toc-number">2.0.0.3.</span> <span class="toc-text">3.图片标签:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#4-列表标签"><span class="toc-number">2.0.0.4.</span> <span class="toc-text">4.列表标签:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#5-链接标签"><span class="toc-number">2.0.0.5.</span> <span class="toc-text">5.链接标签:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#6-块标签"><span class="toc-number">2.0.0.6.</span> <span class="toc-text">6.块标签:</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#7-语义化标签-html5中为了提高程序的可读性，提供了一些标签"><span class="toc-number">2.0.0.7.</span> <span class="toc-text">7.语义化标签:  html5中为了提高程序的可读性，提供了一些标签</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#8-表格标签"><span class="toc-number">2.0.0.8.</span> <span class="toc-text">8.表格标签:</span></a></li></ol></li></ol></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL基础"><span class="toc-number">1.</span> <span class="toc-text">MySQL基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-关系型数据库"><span class="toc-number">1.1.</span> <span class="toc-text">1. 关系型数据库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-SQL"><span class="toc-number">1.2.</span> <span class="toc-text">2.SQL</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Structured-Query-Language：结构化查询语言"><span class="toc-number">1.2.1.</span> <span class="toc-text">Structured Query Language：结构化查询语言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SQL分类"><span class="toc-number">1.2.2.</span> <span class="toc-text">SQL分类</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DDL-操作数据库、表-模板化sql"><span class="toc-number">2.</span> <span class="toc-text">DDL:操作数据库、表[^模板化sql]</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#操作数据库：CRUD"><span class="toc-number">2.1.</span> <span class="toc-text">操作数据库：CRUD</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#操作表-CRUD"><span class="toc-number">2.2.</span> <span class="toc-text">操作表 : CRUD</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DML-增删改表中的数据"><span class="toc-number">2.2.1.</span> <span class="toc-text">DML 增删改表中的数据</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DQL-查询表中的记录"><span class="toc-number">3.</span> <span class="toc-text">DQL:查询表中的记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#DQL排序查询"><span class="toc-number">3.0.1.</span> <span class="toc-text">DQL排序查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#聚合函数"><span class="toc-number">3.0.2.</span> <span class="toc-text">聚合函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分组查询"><span class="toc-number">3.0.3.</span> <span class="toc-text">分组查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分页查询"><span class="toc-number">3.0.4.</span> <span class="toc-text">分页查询</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#约束"><span class="toc-number">4.</span> <span class="toc-text">约束</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据库设计"><span class="toc-number">4.0.1.</span> <span class="toc-text">数据库设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多表查询"><span class="toc-number">4.1.</span> <span class="toc-text">*多表查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#事务"><span class="toc-number">4.2.</span> <span class="toc-text">事务</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DCL-数据库控制语言"><span class="toc-number">4.3.</span> <span class="toc-text">DCL : (数据库控制语言)</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
